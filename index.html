@@ -83,13 +83,35 @@ footer{padding:30px 0 40px;color:var(--muted);font-size:.82rem}
 footer p{max-width:80ch}
 dialog{border:0;border-radius:10px;padding:26px;max-width:380px;background:var(--paper);color:var(--ink)}
 dialog::backdrop{background:rgba(0,0,0,.5)}
+@media(max-width:600px){
+  .wrap{padding:0 18px}
+  .top{gap:12px;padding:14px 0}
+  .top .btn{padding:8px 12px;font-size:.82rem}
+  .hero{padding:18px 0 40px}
+  .hero p.sub{font-size:1rem}
+  .cta-row{gap:12px}
+  .try{gap:22px;margin-top:32px}
+  .grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:5px}
+  .grid button[aria-pressed="true"]{transform:none}
+  .panel{padding:18px;min-height:0}
+  .panel .idea{font-size:clamp(1.2rem,5vw,1.4rem)}
+  .ctrl{align-items:stretch}
+  .ctrl button{min-height:44px}
+  .ctrl label{width:100%;min-height:44px}
+  .ctrl input{min-height:44px}
+  section{padding:44px 0}
+  .two{gap:24px}
+  .buy{padding:48px 0}
+  .buy .wrap{gap:22px}
+  dialog{width:calc(100% - 32px);max-height:90dvh;overflow:auto;padding:20px}
+}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 <header class="wrap top">
   <div class="brand">Marigold &amp; Ink</div>
-  <a href="#buy" class="btn alt" style="padding:9px 18px;font-size:.9rem">Get the Vault</a>
+  <a href="#buy" class="btn alt">Get the Vault</a>
 </header>
 
 <main>
